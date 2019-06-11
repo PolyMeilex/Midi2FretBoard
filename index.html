@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <script src="https://cdn.jsdelivr.net/npm/webmidi"></script>
+    <title>Midi2FretBoard</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="controls">
+        <select class="bgStyle" id="inputSelect"></select>
+        <button class="bgStyle" id="inputBtn">Set</button>
+      </div>
+      <div id="tabWrapper">
+        <img
+          id="fretboardImg"
+          width="1027"
+          height="260"
+          src="./img/guitar-top2.png"
+          class="coveredImage"
+        />
+
+        <canvas
+          id="mainCanvas"
+          width="1100"
+          height="260"
+          class="coveringCanvas"
+        ></canvas>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </body>
+</html>
