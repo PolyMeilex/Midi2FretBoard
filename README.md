@@ -10,6 +10,8 @@ If you are piano player and you want to quickly jump into playing guitar without
 
 I originally wrote it in GoLang when I was starting to play guitar and it was never meant to be published, but it was so useful at the beginning of my guitar journey, that I decided to simplify it and rewrite it in JS and then publish it so maybe someone in the future will find it as useful as it was for me (-:
 
+![Banner2](https://i.imgur.com/NQAlc56.png)
+
 # How To Use
 
 - Connect your midi keyboard to computer (or smartfon with [OTG Cable](https://www.google.com/search?q=otg%20image))
@@ -22,4 +24,4 @@ I originally wrote it in GoLang when I was starting to play guitar and it was ne
 - Chrome or Chromium based browser is recommended, app was only tested on desktop Chromium and Android Chromium builds.
 - If you don't see your midi keyboard, make sure that you are using https and reload website.
 
-![Banner2](https://i.imgur.com/NQAlc56.png)
+
