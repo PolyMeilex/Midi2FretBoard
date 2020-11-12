@@ -2,7 +2,7 @@
 
 Midi Piano To FretBoard
 
-![Banner](https://i.imgur.com/oNTW1tR.png)
+![Banner](https://i.imgur.com/iFwsHGh.png)
 
 Midi2FretBoard is a tool for piano players that displays notes from midi keyboard on guitar FretBoard. This allows piano players to easily learn how to play songs that they already know from piano, on new instrument.
 
