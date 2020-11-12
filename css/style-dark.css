@@ -1,0 +1,52 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.string > .cell {
+  background-color: rgb(42, 42, 42);
+}
+
+.string > .cell:nth-child(1) {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.string > .cell:nth-child(4),
+.string > .cell:nth-child(6),
+.string > .cell:nth-child(8),
+.string > .cell:nth-child(10),
+.string > .cell:nth-child(13),
+.string > .cell:nth-child(16),
+.string > .cell:nth-child(18),
+.string > .cell:nth-child(20),
+.string > .cell:nth-child(22) {
+  background-color: rgb(58, 58, 58);
+}
+
+#theme-icon > svg {
+  fill: white;
+}
+
+#keyboard-icon > svg {
+  fill: white;
+}
+
+#keyboard-wrapper {
+  background-color: rgb(26 26 26);
+
+  border-top: 1px rgba(255, 255, 255, 0.5) solid;
+  border-left: 1px rgba(255, 255, 255, 0.5) solid;
+  border-right: 1px rgba(255, 255, 255, 0.5) solid;
+}
+
+.key--white {
+  border-right: 1px rgba(255, 255, 255, 0.5) solid;
+}
+
+.key--black {
+  background-color: black;
+
+  border-left: 1px rgba(255, 255, 255, 0.5) solid;
+  border-right: 1px rgba(255, 255, 255, 0.5) solid;
+  border-bottom: 1px rgba(255, 255, 255, 0.5) solid;
+}

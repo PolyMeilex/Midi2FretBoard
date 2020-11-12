@@ -1,0 +1,43 @@
+.string > .cell {
+  background-color: #f0f0f0;
+}
+
+.string > .cell:nth-child(1) {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.string > .cell:nth-child(4),
+.string > .cell:nth-child(6),
+.string > .cell:nth-child(8),
+.string > .cell:nth-child(10),
+.string > .cell:nth-child(13),
+.string > .cell:nth-child(16),
+.string > .cell:nth-child(18),
+.string > .cell:nth-child(20),
+.string > .cell:nth-child(22) {
+  background-color: #dcdcdc;
+}
+
+#theme-icon > svg {
+  fill: black;
+}
+
+#keyboard-wrapper {
+  background-color: white;
+
+  border-top: 1px black solid;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+}
+
+.key--white {
+  border-right: 1px black solid;
+}
+
+.key--black {
+  background-color: black;
+
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+  border-bottom: 1px black solid;
+}
