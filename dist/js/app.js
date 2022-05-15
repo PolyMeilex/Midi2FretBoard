@@ -31,9 +31,9 @@ var FretCell = /** @class */ (function () {
     }
     FretCell.prototype.setState = function (state) {
         if (state) {
-            var color = "hsl(" + this.oct * 100 + ",100%,50%,1.0)";
-            this.root.style.boxShadow = "0px 0px 20px 2px " + color;
-            this.root.style.backgroundColor = "" + color;
+            var color = "hsl(".concat(this.oct * 100, ",100%,50%,1.0)");
+            this.root.style.boxShadow = "0px 0px 20px 2px ".concat(color);
+            this.root.style.backgroundColor = "".concat(color);
             this.root.style.zIndex = "999";
             // this.root.style.color = "white";
             this.root.style.fontWeight = "bold";
@@ -139,7 +139,7 @@ var ControlsDOM = /** @class */ (function () {
     };
     ControlsDOM.prototype.updateInputs = function () {
         var inputs = WebMidi.inputs;
-        var options = inputs.map(function (i) { return "<option value=\"" + i.id + "\">" + i.name + "</option>"; });
+        var options = inputs.map(function (i) { return "<option value=\"".concat(i.id, "\">").concat(i.name, "</option>"); });
         this.deviceSelect.innerHTML = options.join("\n");
     };
     ControlsDOM.prototype.updateErrorLabel = function (err) {
@@ -207,7 +207,8 @@ var Main = /** @class */ (function () {
         input.addListener("noteon", "all", function (e) {
             var pitch = e.note.number % 12;
             var oct = e.note.octave;
-            _this.onNote(pitch, oct, true);
+            var on = e.velocity != 0;
+            _this.onNote(pitch, oct, on);
         });
     };
     Main.prototype.connectListeners = function () {
@@ -247,6 +248,7 @@ var Main = /** @class */ (function () {
                 white_1[4], black_1[4],
                 white_1[5], black_1[5],
                 white_1[6],
+                // 
             ];
         }
     };

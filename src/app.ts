@@ -260,7 +260,9 @@ class Main {
         input.addListener("noteon", "all", (e) => {
             const pitch = e.note.number % 12;
             const oct = e.note.octave;
-            this.onNote(pitch, oct, true);
+            
+            const on = e.velocity != 0;
+            this.onNote(pitch, oct, on);
         });
     }
 
